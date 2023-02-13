@@ -4,3 +4,11 @@
 -3 -> нет
 7 -> нет*/
 
+int number;
+Console.Write("Введите число: ");
+int.TryParse(Console.ReadLine()!, out number);
+
+if (number % 2 == 0)
+    Console.Write("Число является четным");
+else
+    Console.Write("Число является нечетным");
